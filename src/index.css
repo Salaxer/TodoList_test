@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;0,800;1,400&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,7 +16,6 @@ body {
 }
 html{
   box-sizing: border-box;
-
 }
 
 code {
@@ -20,14 +24,22 @@ code {
 }
 
 :root{
-  --blue-100: rgb(187, 223, 255);
-  --blue-200: rgb(128, 188, 240);
-  --blue-400: rgb(79, 126, 167);
-  --blue-600: rgb(36, 80, 119);
-  --white-200: rgb(240, 240, 240);
-  --white-400: rgb(214, 232, 248);
-  --white-600: rgb(192, 192, 192);
-  --black-200: rgb(92, 92, 92);
-  --black-400: rgb(39, 39, 39);
-  --black-600: rgb(17, 17, 17);
+  --white-dark: #F6F5F5;
+  --white-normal: #FDFAF6;
+}
+
+
+input{
+  border: 0;
+  height: 2rem;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  text-align: center;
+  outline: none;
+  font-size: medium;
+  font-weight: 300;
+}
+input:focus{
+  outline: 0.13rem solid var(--blue-400);
+  outline-offset: 0.15rem;
 }

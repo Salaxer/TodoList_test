@@ -1,20 +1,22 @@
 .conHeader{
     width: 100%;
     height: 65px;
-    background-color: var(--white-400);
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px 2px 5px rgba(134, 134, 134, 0.22);
     gap: 3rem;
     padding: 0 2rem;
     box-sizing: border-box;
+    background-color: var(--white-normal);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .conHeader__title{
-    color: var(--black-400);
     margin: 0;
-    font-size: larger;
+    font-size: x-large;
     font-family: Poppins, sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-kerning: normal;
 }

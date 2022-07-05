@@ -1,0 +1,61 @@
+.contToDoList{
+    width: 100%;
+    padding: 3rem 1rem;
+    position: relative;
+}
+.contToDoList__modal{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.contToDoList__form{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    gap: 0.7rem;
+    max-width: 500px;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    background-color: var(--white-normal);
+    padding-bottom: 4rem;
+}
+.contToDoList__form input{
+    width: 100%;
+}
+.contToDoList__form p{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 88, 88);
+}
+.contToDoList__list{
+    width: 100%;
+    border-radius: 1rem;
+    min-height: 100px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contToDoList__list--item{
+    width: 100%;
+}
+@media screen and (min-width: 500px) {
+    .contToDoList__form{
+        max-width: 500px;
+        min-width: 500px;
+    }
+    .contToDoList__list{
+        padding: 1rem;
+    }
+    .contToDoList{
+        width: 100%;
+        position: relative;
+    }
+}
