@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { TodoListType } from '../../container/todoList/TodoList';
+import { TodoListType } from '../../components/modal/Modal';
 import type { RootState } from '../store'
 
 const initialState: TodoListType[] = [{

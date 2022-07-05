@@ -1,5 +1,5 @@
 import { Resolver } from "react-hook-form";
-import { TodoListType } from "./TodoList";
+import { TodoListType } from "./Modal";
 import { verifyInput } from "./verifyInput";
 
 export const resolver: Resolver<TodoListType> = async (values) => {

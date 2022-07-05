@@ -1,0 +1,48 @@
+.contToDoList__modal{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.contToDoList__form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 100%;
+    gap: 0.7rem;
+    max-width: 500px;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    background-color: var(--white-normal);
+    padding-bottom: 7rem;
+}
+.contToDoList__form input{
+    width: 100%;
+}
+.contToDoList__modal--open{
+    position: absolute;
+    cursor: pointer;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--orange);
+    padding: 0.5rem;
+    height: 80px;
+    width: 80px;
+}
+.contToDoList__form p{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 88, 88);
+}
+@media screen and (min-width: 450px) {
+    .contToDoList__form{
+        max-width: 450px;
+        min-width: 450px;
+    }
+}
