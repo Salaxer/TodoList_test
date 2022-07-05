@@ -1,6 +1,6 @@
 .contToDoList__modal{
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     justify-content: center;
@@ -24,7 +24,7 @@
     width: 100%;
 }
 .contToDoList__modal--open{
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     bottom: 2rem;
     right: 2rem;
