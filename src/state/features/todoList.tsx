@@ -8,6 +8,7 @@ const initialState: TodoListType[] = [{
   date: Date.now(),
 }]
 
+
 export const todoListSlice = createSlice({
   name: 'todoList',
   initialState,

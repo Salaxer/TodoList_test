@@ -33,7 +33,8 @@ const ItemList:FC<PropsItemList> = ({message, index, check, date}) => {
   const setCurrentMessage = (e: any) =>{
     setnewMessage({...newMessage, text: e.target.value});
   }
-  const newCurrentMessage = () =>{
+  const newCurrentMessage = (e:any) =>{
+    e.preventDefault();
     if (newMessage.text.length>0) {
 
       dispatch(modifyItem({ index, newList: { 
@@ -61,10 +62,10 @@ const ItemList:FC<PropsItemList> = ({message, index, check, date}) => {
       <span onClick={checkItem} className='contListItem__checkbox--check'></span>
     </label>
     {newMessage.modifying ? 
-    <div className='contListItem__setMessage'>
-      <input type="text" onChange={setCurrentMessage} name="" value={newMessage.text}/>
-      <input type="button" onClick={newCurrentMessage} value="OK"/>
-    </div>
+    <form onSubmit={newCurrentMessage} className='contListItem__setMessage'>
+      <input type="text" autoFocus onChange={setCurrentMessage} name="" value={newMessage.text}/>
+      <input type="submit" value="OK"/>
+    </form>
     :
       <p
         onClick={showInput}

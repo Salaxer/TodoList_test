@@ -63,7 +63,7 @@
     cursor: pointer;
     color: #100303;
 }
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 450px) {
     .contListItem{
         max-width: 300px;
         width: 300px;

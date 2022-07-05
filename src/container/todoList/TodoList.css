@@ -15,6 +15,7 @@
 .contToDoList__form{
     display: flex;
     flex-direction: column;
+    position: relative;
     min-width: 100%;
     gap: 0.7rem;
     max-width: 500px;
@@ -22,10 +23,21 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 2rem;
     background-color: var(--white-normal);
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
 }
 .contToDoList__form input{
     width: 100%;
+}
+.contToDoList__modal--open{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--orange);
+    padding: 0.5rem;
+    height: 80px;
+    width: 80px;
 }
 .contToDoList__form p{
     margin: 0;
@@ -36,7 +48,7 @@
     width: 100%;
     border-radius: 1rem;
     min-height: 100px;
-    padding: 0;
+    padding: 1rem;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -46,10 +58,10 @@
 .contToDoList__list--item{
     width: 100%;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 450px) {
     .contToDoList__form{
-        max-width: 500px;
-        min-width: 500px;
+        max-width: 450px;
+        min-width: 450px;
     }
     .contToDoList__list{
         padding: 1rem;
@@ -57,5 +69,8 @@
     .contToDoList{
         width: 100%;
         position: relative;
+    }
+    .contToDoList__list--item{
+        width: max-content;
     }
 }
